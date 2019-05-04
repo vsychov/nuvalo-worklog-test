@@ -21,7 +21,7 @@ In another view show a list of companies sorted by workhours logged in decending
 - Solution must look presentable :white_check_mark: - https://www.dropbox.com/s/t4et08jeneuo6bd/Screenshot%202019-05-05%2000.34.55.png?dl=0
 - Form must have date range selection :white_check_mark: - https://www.dropbox.com/s/cz5gh65p5671dwo/Screenshot%202019-05-05%2000.35.42.png?dl=0
 - Data fetching and grouping must be done on server side :white_check_mark:
-- Cache querys so that the same query will not be done twice _`ll query to API is cached in filesystem, with infinite TTL (Cache querys so that the same query will not be done twice)_
+- Cache querys so that the same query will not be done twice :white_check_mark: _`All query to API is cached in filesystem, with infinite TTL (Cache querys so that the same query will not be done twice)_
 - Data that gets sent to frontend must be structured on server side :white_check_mark:
 - Show proper error messages if applicable :white_check_mark: https://www.dropbox.com/s/v0s2iw8lrw7epgx/Screenshot%202019-05-05%2000.54.09.png?dl=0
 - Must use GIT repo (GitLab, GitHub, BitBucket) :white_check_mark:
