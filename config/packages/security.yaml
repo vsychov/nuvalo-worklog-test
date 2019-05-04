@@ -1,0 +1,19 @@
+security:
+    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    providers:
+        backend_users:
+            memory:
+                users:
+                    '%env(APP_USER)%': { password: '%env(APP_PASSWORD)%', roles: ['ROLE_USER'] }
+    encoders:
+        Symfony\Component\Security\Core\User\User: 'bcrypt'
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        main:
+            anonymous: false
+            http_basic: true
+
+    access_control:
+         - { path: ^/, roles: ROLE_USER }

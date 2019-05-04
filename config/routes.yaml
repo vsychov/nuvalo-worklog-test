@@ -1,0 +1,7 @@
+index:
+    path: /
+    controller: App\Controller\DefaultController::index
+
+fetchData:
+    path: /report-data
+    controller: App\Controller\DefaultController::reportData
